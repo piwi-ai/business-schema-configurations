@@ -6,8 +6,8 @@
  * nome, cognome, codiceFiscale, partitaIva, date (DD.MM.YYYY),
  * statoCivile, targa, telaio.
  */
-import { enumField as _enumField } from './schema';
-export { text, num, enumField, email, datePattern, objectSchema, arrayOfObjects } from './schema';
+import { enumField as _enumField } from './schema.js';
+export { text, num, enumField, email, datePattern, objectSchema, arrayOfObjects } from './schema.js';
 
 // Local alias for use within this module
 const enumField = _enumField;

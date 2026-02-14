@@ -1,5 +1,5 @@
-import type { EntityDataSource, ConditionalRequirement, MatchFieldConfig, EntityTypeDef } from '../../../types';
-import { DOC_IDS } from './documentTypes';
+import type { EntityDataSource, ConditionalRequirement, MatchFieldConfig, EntityTypeDef } from '../../../types.js';
+import { DOC_IDS } from './documentTypes.js';
 
 // ─── Entity Type IDs ────────────────────────────────────────────────────────
 

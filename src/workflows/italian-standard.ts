@@ -5,8 +5,8 @@
  * the extraction and identification pipelines are identical — only
  * the document types and their schemas differ per vertical.
  */
-import type { WorkflowNode, WorkflowEdge, WorkflowDef } from '../types';
-import { JobStatus } from '../types';
+import type { WorkflowNode, WorkflowEdge, WorkflowDef } from '../types.js';
+import { JobStatus } from '../types.js';
 
 // ─── Shared AI Prompts ──────────────────────────────────────────────────────
 

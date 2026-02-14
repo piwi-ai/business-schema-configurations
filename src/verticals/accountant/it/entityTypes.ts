@@ -5,8 +5,8 @@
  * Aggregates data from identity docs, invoices, tax declarations,
  * payroll, balance sheets, and fiscal documents.
  */
-import type { EntityTypeDef } from '../../../types';
-import { DOC_IDS } from './documentTypes';
+import type { EntityTypeDef } from '../../../types.js';
+import { DOC_IDS } from './documentTypes.js';
 
 // ─── Match helpers ──────────────────────────────────────────────────────────
 

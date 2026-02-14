@@ -4,8 +4,8 @@
  * English-language prompts, US date formats (MM/DD/YYYY), and
  * US-specific extraction conventions.
  */
-import type { WorkflowNode, WorkflowEdge, WorkflowDef } from '../types';
-import { JobStatus } from '../types';
+import type { WorkflowNode, WorkflowEdge, WorkflowDef } from '../types.js';
+import { JobStatus } from '../types.js';
 
 // ─── Shared AI Prompts ──────────────────────────────────────────────────────
 

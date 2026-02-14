@@ -4,8 +4,8 @@
  * 4 entity types: Venditore, Acquirente, Veicolo, Transazione.
  * Aggregates data from identity documents, vehicle records, sales contracts, and financing.
  */
-import type { EntityTypeDef } from '../../../types';
-import { DOC_IDS } from './documentTypes';
+import type { EntityTypeDef } from '../../../types.js';
+import { DOC_IDS } from './documentTypes.js';
 
 // ─── Match helpers ──────────────────────────────────────────────────────────
 

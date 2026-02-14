@@ -2,8 +2,8 @@ import {
     objectSchema, arrayOfObjects,
     text, num, nome, cognome, codiceFiscale, email, date, datePattern, enumField,
     STATO_CIVILE_VALUES, statoCivile,
-} from '../../../helpers/it';
-import type { DocumentTypeDef } from '../../../types';
+} from '../../../helpers/it.js';
+import type { DocumentTypeDef } from '../../../types.js';
 
 // ─── Document Type IDs ──────────────────────────────────────────────────────
 

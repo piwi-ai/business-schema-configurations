@@ -5,10 +5,10 @@
  * (730, Redditi PF, CU), F24 payments, payroll, balance sheets, bank
  * statements, ISEE, and periodic VAT filings.
  */
-import type { BusinessConfiguration } from '../../../types';
-import { documentTypes, DOC_IDS } from './documentTypes';
-import { entityTypes, ENTITY_IDS } from './entityTypes';
-import { documentWorkflows } from './documentWorkflows';
+import type { BusinessConfiguration } from '../../../types.js';
+import { documentTypes, DOC_IDS } from './documentTypes.js';
+import { entityTypes, ENTITY_IDS } from './entityTypes.js';
+import { documentWorkflows } from './documentWorkflows.js';
 
 export { DOC_IDS, ENTITY_IDS };
 

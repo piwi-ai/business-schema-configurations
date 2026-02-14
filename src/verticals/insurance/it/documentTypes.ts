@@ -7,11 +7,11 @@
  *
  * 15 document types for multi-branch insurance management.
  */
-import type { DocumentTypeDef } from '../../../types';
+import type { DocumentTypeDef } from '../../../types.js';
 import {
     text, num, date, enumField, objectSchema, arrayOfObjects,
     nome, cognome, codiceFiscale, targa, telaio,
-} from '../../../helpers/it';
+} from '../../../helpers/it.js';
 
 // ─── Document IDs ───────────────────────────────────────────────────────────
 

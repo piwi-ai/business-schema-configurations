@@ -7,11 +7,11 @@
  *
  * 14 document types for US real estate closings.
  */
-import type { DocumentTypeDef } from '../../../types';
+import type { DocumentTypeDef } from '../../../types.js';
 import {
     text, num, dateUS, enumField, objectSchema, arrayOfObjects,
     firstName, lastName, ssn, currency, address, parcelNumber,
-} from '../../../helpers/us';
+} from '../../../helpers/us.js';
 
 // ─── Document IDs ───────────────────────────────────────────────────────────
 

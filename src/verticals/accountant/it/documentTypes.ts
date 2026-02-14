@@ -7,11 +7,11 @@
  *
  * 14 document types for Italian accounting and tax management.
  */
-import type { DocumentTypeDef } from '../../../types';
+import type { DocumentTypeDef } from '../../../types.js';
 import {
     text, num, date, enumField, objectSchema, arrayOfObjects,
     nome, cognome, codiceFiscale, partitaIva,
-} from '../../../helpers/it';
+} from '../../../helpers/it.js';
 
 // ─── Document IDs ───────────────────────────────────────────────────────────
 

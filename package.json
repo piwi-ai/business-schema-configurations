@@ -1,6 +1,6 @@
 {
     "name": "@piwi.ai/business-schema-configurations",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "description": "JSON schema configurations for intelligent document processing — document types, entity types, entity relationships, and AI extraction workflows for various business verticals.",
     "keywords": [
         "business-schema",

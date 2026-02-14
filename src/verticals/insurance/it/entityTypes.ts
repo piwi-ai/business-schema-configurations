@@ -4,8 +4,8 @@
  * 4 entity types: Assicurato, Veicolo, Sinistro, Polizza.
  * Aggregates data from identity, policies, claims, assessments, and medical certificates.
  */
-import type { EntityTypeDef } from '../../../types';
-import { DOC_IDS } from './documentTypes';
+import type { EntityTypeDef } from '../../../types.js';
+import { DOC_IDS } from './documentTypes.js';
 
 // ─── Match helpers ──────────────────────────────────────────────────────────
 

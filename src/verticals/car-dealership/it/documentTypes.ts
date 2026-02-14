@@ -6,11 +6,11 @@
  *
  * 16 document types for auto sales and ownership transfer.
  */
-import type { DocumentTypeDef } from '../../../types';
+import type { DocumentTypeDef } from '../../../types.js';
 import {
     text, num, date, enumField, objectSchema, arrayOfObjects,
     nome, cognome, codiceFiscale, statoCivile, targa, telaio,
-} from '../../../helpers/it';
+} from '../../../helpers/it.js';
 
 // ─── Document IDs ───────────────────────────────────────────────────────────
 

@@ -5,8 +5,8 @@
  * Aggregates data from IDs, purchase agreements, deeds, title reports,
  * appraisals, inspections, mortgage applications, and closing disclosures.
  */
-import type { EntityTypeDef } from '../../../types';
-import { DOC_IDS } from './documentTypes';
+import type { EntityTypeDef } from '../../../types.js';
+import { DOC_IDS } from './documentTypes.js';
 
 // ─── Match helpers ──────────────────────────────────────────────────────────
 

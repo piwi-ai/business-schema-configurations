@@ -26,32 +26,32 @@ export type {
     WorkflowEdge,
     WorkflowNodeData,
     BusinessConfiguration,
-} from './types';
-export { JobStatus } from './types';
+} from './types.js';
+export { JobStatus } from './types.js';
 
 // ─── Helpers (per country — re-export schema primitives from each) ──────────
-export * as schemaHelpers from './helpers/schema';
-export * as itHelpers from './helpers/it';
-export * as usHelpers from './helpers/us';
+export * as schemaHelpers from './helpers/schema.js';
+export * as itHelpers from './helpers/it.js';
+export * as usHelpers from './helpers/us.js';
 
 // ─── Shared Workflows ───────────────────────────────────────────────────────
-export { italianWorkflows } from './workflows/italian-standard';
-export { usWorkflows } from './workflows/us-standard';
+export { italianWorkflows } from './workflows/italian-standard.js';
+export { usWorkflows } from './workflows/us-standard.js';
 
 // ─── Vertical Configurations ────────────────────────────────────────────────
-export { accountantItConfig } from './verticals/accountant/it';
-export { carDealershipItConfig } from './verticals/car-dealership/it';
-export { insuranceItConfig } from './verticals/insurance/it';
-export { realEstateItConfig } from './verticals/real-estate/it';
-export { realEstateUsConfig } from './verticals/real-estate/us';
+export { accountantItConfig } from './verticals/accountant/it/index.js';
+export { carDealershipItConfig } from './verticals/car-dealership/it/index.js';
+export { insuranceItConfig } from './verticals/insurance/it/index.js';
+export { realEstateItConfig, DOC_IDS as realEstateItDocIds, ENTITY_IDS as realEstateItEntityIds } from './verticals/real-estate/it/index.js';
+export { realEstateUsConfig } from './verticals/real-estate/us/index.js';
 
 // ─── Convenience: all configs in one array ──────────────────────────────────
-import { accountantItConfig } from './verticals/accountant/it';
-import { carDealershipItConfig } from './verticals/car-dealership/it';
-import { insuranceItConfig } from './verticals/insurance/it';
-import { realEstateItConfig } from './verticals/real-estate/it';
-import { realEstateUsConfig } from './verticals/real-estate/us';
-import type { BusinessConfiguration } from './types';
+import { accountantItConfig } from './verticals/accountant/it/index.js';
+import { carDealershipItConfig } from './verticals/car-dealership/it/index.js';
+import { insuranceItConfig } from './verticals/insurance/it/index.js';
+import { realEstateItConfig } from './verticals/real-estate/it/index.js';
+import { realEstateUsConfig } from './verticals/real-estate/us/index.js';
+import type { BusinessConfiguration } from './types.js';
 
 /** All available business configurations */
 export const allConfigurations: BusinessConfiguration[] = [
