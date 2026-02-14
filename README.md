@@ -1,16 +1,86 @@
 # Business Schema Configurations
 
-Open-source, AI-readable business schema configurations for intelligent document processing.
+Open-source, AI-readable business schema configurations for **[PIWI](https://piwi.ai)** — an intelligent document processing (IDP) platform that uses AI to automatically extract, validate, and export structured data from business documents.
 
-Each configuration defines **what data** to extract from documents, **how to match** extracted data to business entities, and **what workflows** to use for processing — all in pure TypeScript with zero runtime dependencies.
+This package provides the **brain** behind document understanding: it tells the AI **what documents exist** in a business, **what data to extract** from each one, **how to match** extracted data to real-world entities, and **what processing pipeline** to follow — all in pure TypeScript with zero runtime dependencies.
 
-## Why This Exists
+---
 
-AI systems need structured definitions to process business documents. This package provides those definitions for common business verticals (real estate, insurance, accounting, etc.) across countries. Any AI agent can:
+## What Is PIWI?
+
+**PIWI** is an AI-powered platform that turns stacks of unstructured business documents (PDFs, scans, photos) into clean, structured, validated data — ready for export via **REST API** or rendered directly onto **PDF documents**.
+
+### How It Works
+
+```
+📄 Upload documents (PDF, scan, photo)
+        ↓
+🤖 AI Identification — "What type of document is this?"
+   The AI reads the document and matches it against the document types
+   defined in this package (e.g., Invoice, ID Card, Tax Return)
+        ↓
+🔍 AI Extraction — "What data is in this document?"
+   Using the JSON Schema from the matched document type, the AI extracts
+   every field (names, dates, amounts, tax codes, addresses, …)
+        ↓
+✅ AI Verification — "Is the extraction correct?"
+   A second AI pass independently verifies the extracted data,
+   catching errors and assigning confidence scores per field
+        ↓
+🔗 Entity Matching — "Who/what does this data belong to?"
+   Extracted fields are matched to business entities (Buyer, Seller,
+   Property, Vehicle, …) using fuzzy matching rules defined here
+        ↓
+📤 Export — API or PDF
+   • REST API: retrieve structured data as JSON for any downstream system
+   • PDF Export: overlay extracted + validated data directly onto the
+     original document, producing filled-in PDFs ready for signing
+```
+
+### Real-World Example
+
+A **real estate agency** uploads a folder of documents for a property transaction:
+- Driver's licenses, tax forms → AI identifies them, extracts buyer/seller names, SSNs
+- Purchase agreement → AI extracts property address, sale price, closing date
+- Title deed, survey → AI extracts parcel numbers, legal descriptions
+
+PIWI **automatically links** all extracted data to the correct entities (Buyer, Seller, Property, Transaction) and flags missing documents. The agency can then:
+- **Pull structured data via API** to feed into their CRM or compliance system
+- **Generate pre-filled PDF documents** with all extracted data overlaid
+
+### 🔒 Privacy-First & 100% Offline
+
+PIWI is designed to work **entirely offline** — no cloud, no external API calls, no data leaving your device.
+
+- **Local AI via WebGPU**: AI models run directly in the browser using [WebGPU](https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API) acceleration, leveraging your device's GPU for fast inference without any server
+- **No cloud dependency**: Documents are processed locally — your sensitive business data (contracts, tax returns, financial records, identity documents) **never leaves your machine**
+- **OPFS storage**: Documents and model weights are stored in the browser's [Origin Private File System](https://developer.mozilla.org/en-US/docs/Web/API/File_System_API/Origin_private_file_system), fully sandboxed and private
+- **IndexedDB**: All extracted data, entity mappings, and configuration state persist locally via IndexedDB
+- **Optional cloud mode**: For organizations that prefer managed infrastructure, PIWI also supports cloud deployment with server-side AI (Google Gemini, etc.) — but the offline-first architecture ensures privacy is never compromised by default
+
+This makes PIWI ideal for industries handling highly sensitive documents: **law firms**, **tax advisors**, **medical practices**, **financial institutions**, and **government agencies**.
+
+---
+
+## Where This Repo Fits
+
+This package defines the **configuration layer** — the rules that drive everything above. Without it, the AI doesn't know what to look for.
+
+| Layer | Role | This Repo? |
+|-------|------|:----------:|
+| Document Upload & Storage | Handle file uploads, store in S3 | ❌ |
+| AI Processing Engine | Run LLM calls, orchestrate workflows | ❌ |
+| **Schema Configurations** | **Define document types, entity types, extraction schemas, workflows** | **✅** |
+| Entity Resolution | Match extracted data to entities using fuzzy rules | ❌ |
+| API & PDF Export | Serve structured data, render filled PDFs | ❌ |
+
+Any AI agent, LLM, or automation system can use these configurations to:
 
 1. **Read** a configuration to understand what documents a business handles
-2. **Use** the JSON schemas to extract structured data from documents
-3. **Extend** the package by adding new verticals or countries
+2. **Use** the JSON schemas as extraction instructions for any LLM (GPT, Gemini, Claude, …)
+3. **Validate** extracted data against the schema's required fields and patterns
+4. **Resolve entities** by following the match rules and field mappings
+5. **Extend** the package by adding new verticals, countries, or document types
 
 ---
 

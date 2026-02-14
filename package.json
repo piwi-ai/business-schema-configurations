@@ -27,19 +27,24 @@
     "bugs": {
         "url": "https://github.com/piwi-ai/business-schema-configurations/issues"
     },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
     "type": "module",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "exports": {
-        "./configs/*": "./configs/*",
-        "./schema": "./schema/config.schema.json",
-        "./types": "./dist/types.js"
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        },
+        "./configs/*": "./configs/*"
     },
     "files": [
         "configs/",
-        "schema/",
         "dist/",
-        "llms.txt",
-        "llms-full.txt",
-        "AGENTS.md"
+        "src/",
+        "README.md"
     ],
     "scripts": {
         "build": "tsc",
