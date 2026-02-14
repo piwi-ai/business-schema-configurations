@@ -12,7 +12,7 @@ export { text, num, enumField, email, datePattern, objectSchema, arrayOfObjects 
 
 /** Date field (US MM/DD/YYYY format) */
 export const dateUS = (desc = 'Date in MM/DD/YYYY format') =>
-    ({ type: 'string' as const, description: desc, pattern: '^\\\\d{2}/\\\\d{2}/\\\\d{4}$' });
+    ({ type: 'string' as const, description: desc, pattern: '^\\d{2}/\\d{2}/\\d{4}$' });
 
 // ─── US Person Fields ───────────────────────────────────────────────────────
 
@@ -28,7 +28,7 @@ export const lastName = (desc = 'Last name (surname / family name)') =>
 export const ssn = () => ({
     type: 'string' as const,
     description: 'Social Security Number — 9 digits, format XXX-XX-XXXX (extract with dashes)',
-    pattern: '^\\\\d{3}-\\\\d{2}-\\\\d{4}$',
+    pattern: '^\\d{3}-\\d{2}-\\d{4}$',
 });
 
 /** Employer Identification Number (US) */

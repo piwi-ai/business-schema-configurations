@@ -95,12 +95,12 @@
           "dataEmissione": {
             "type": "string",
             "description": "Data di emissione in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "dataScadenza": {
             "type": "string",
             "description": "Data di scadenza in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "rilasciatoDa": {
             "type": "string",
@@ -117,7 +117,7 @@
           "dataNascita": {
             "type": "string",
             "description": "Data in formato europeo  DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "statoCivile": {
             "type": "string",
@@ -523,7 +523,7 @@
           "dataStipula": {
             "type": "string",
             "description": "Data di stipula in formato europeo DD/MM/YYYY",
-            "pattern": "^\\\\d{2}[./]\\\\d{2}[./]\\\\d{4}$"
+            "pattern": "^\\d{2}[./]\\d{2}[./]\\d{4}$"
           },
           "caparra": {
             "type": "number",
@@ -532,7 +532,7 @@
           "dataRogito": {
             "type": "string",
             "description": "Data prevista per il rogito definitivo in formato europeo DD/MM/YYYY",
-            "pattern": "^\\\\d{2}[./]\\\\d{2}[./]\\\\d{4}$"
+            "pattern": "^\\d{2}[./]\\d{2}[./]\\d{4}$"
           },
           "mediatore": {
             "type": "string",
@@ -820,7 +820,7 @@
           "dataProtocollo": {
             "type": "string",
             "description": "Data del protocollo in formato europeo DD/MM/YYYY",
-            "pattern": "^\\\\d{2}[./]\\\\d{2}[./]\\\\d{4}$"
+            "pattern": "^\\d{2}[./]\\d{2}[./]\\d{4}$"
           },
           "scala": {
             "type": "string",
@@ -872,7 +872,7 @@
           "validoFinoA": {
             "type": "string",
             "description": "Data di validità in formato europeo DD/MM/YYYY",
-            "pattern": "^\\\\d{2}[./]\\\\d{2}[./]\\\\d{4}$"
+            "pattern": "^\\d{2}[./]\\d{2}[./]\\d{4}$"
           },
           "regione": {
             "type": "string"
@@ -918,7 +918,7 @@
           "dataScadenza": {
             "type": "string",
             "description": "Data di scadenza in formato europeo DD/MM/YYYY",
-            "pattern": "^\\\\d{2}[./]\\\\d{2}[./]\\\\d{4}$"
+            "pattern": "^\\d{2}[./]\\d{2}[./]\\d{4}$"
           },
           "codiceUnivoco": {
             "type": "string"
@@ -986,17 +986,17 @@
           "dataDiNascita": {
             "type": "string",
             "description": "Data in formato DD.MM.YYYY — ALWAYS use dots as separator (es. 15.01.2021), NEVER use slashes (15/01/2021 is WRONG)",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "dataDiScadenza": {
             "type": "string",
             "description": "Data in formato DD.MM.YYYY — ALWAYS use dots as separator (es. 15.01.2021), NEVER use slashes (15/01/2021 is WRONG)",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "dataEmissione": {
             "type": "string",
             "description": "Data in formato DD.MM.YYYY — ALWAYS use dots as separator (es. 15.01.2021), NEVER use slashes (15/01/2021 is WRONG)",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -1035,7 +1035,7 @@
           "dataNascita": {
             "type": "string",
             "description": "Data di nascita del defunto in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "luogoNascita": {
             "type": "string",
@@ -1044,7 +1044,7 @@
           "dataDecesso": {
             "type": "string",
             "description": "Data del decesso in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "oraDecesso": {
             "type": "string",
@@ -1121,12 +1121,12 @@
           "dataDecesso": {
             "type": "string",
             "description": "Data del decesso in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "dataPresentazione": {
             "type": "string",
             "description": "Data di presentazione della dichiarazione in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "protocollo": {
             "type": "string",
@@ -1220,7 +1220,7 @@
           "dataTrascrizione": {
             "type": "string",
             "description": "Data di trascrizione in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "notaio": {
             "type": "string",
@@ -1299,7 +1299,7 @@
           "dataRilascio": {
             "type": "string",
             "description": "Data di rilascio in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -1325,7 +1325,7 @@
           "dataRegistrazione": {
             "type": "string",
             "description": "Data di registrazione in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "numeroRegistrazione": {
             "type": "string",
@@ -1408,7 +1408,7 @@
           "dataRilascio": {
             "type": "string",
             "description": "Data di rilascio in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "comuneRilascio": {
             "type": "string",
@@ -1467,7 +1467,7 @@
           "dataMatrimonio": {
             "type": "string",
             "description": "Data di celebrazione del matrimonio in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "luogoMatrimonio": {
             "type": "string",
@@ -1519,7 +1519,7 @@
           "dataRelazione": {
             "type": "string",
             "description": "Data della relazione in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "indirizzo": {
             "type": "string",
@@ -1581,7 +1581,7 @@
           "dataRilascio": {
             "type": "string",
             "description": "Data di rilascio della dichiarazione in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "numeroProtocollo": {
             "type": "string",
@@ -1664,7 +1664,7 @@
           "dataRilascio": {
             "type": "string",
             "description": "Data di rilascio della dichiarazione in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -1695,7 +1695,7 @@
           "dataSentenza": {
             "type": "string",
             "description": "Data della sentenza in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "coniuge1": {
             "type": "string",
@@ -1723,7 +1723,7 @@
           "passaggioInGiudicato": {
             "type": "string",
             "description": "Data di passaggio in giudicato in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -1785,7 +1785,7 @@
           "dataDelibera": {
             "type": "string",
             "description": "Data della delibera in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "validitaDelibera": {
             "type": "string",
@@ -1819,7 +1819,7 @@
           "dataPerizia": {
             "type": "string",
             "description": "Data della perizia in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "indirizzo": {
             "type": "string",
@@ -1924,7 +1924,7 @@
           "dataStipula": {
             "type": "string",
             "description": "Data di stipula in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "numeroRepertorio": {
             "type": "string",
@@ -1977,7 +1977,7 @@
                 "dataPagamento": {
                   "type": "string",
                   "description": "Data del pagamento in formato europeo DD.MM.YYYY",
-                  "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+                  "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
                 },
                 "intestatario": {
                   "type": "string",
@@ -2048,7 +2048,7 @@
           "dataRilascio": {
             "type": "string",
             "description": "Data di rilascio in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "comuneRilascio": {
             "type": "string",
@@ -2095,7 +2095,7 @@
           "dataRilascio": {
             "type": "string",
             "description": "Data di rilascio in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "validita": {
             "type": "string",
@@ -2146,12 +2146,12 @@
           "dataRilascio": {
             "type": "string",
             "description": "Data di rilascio in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "dataScadenza": {
             "type": "string",
             "description": "Data di scadenza in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "questura": {
             "type": "string",
@@ -2280,7 +2280,7 @@
           "dataAtto": {
             "type": "string",
             "description": "Data dell'atto in formato europeo DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "numeroRepertorio": {
             "type": "string",
@@ -5619,6 +5619,6 @@
       ]
     }
   ],
-  "createdAt": "2026-02-14T19:59:26.979Z",
-  "updatedAt": "2026-02-14T19:59:26.979Z"
+  "createdAt": "2026-02-14T21:02:33.726Z",
+  "updatedAt": "2026-02-14T21:02:33.726Z"
 }

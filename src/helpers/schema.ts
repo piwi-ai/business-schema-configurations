@@ -36,7 +36,7 @@ export const email = (desc = '') =>
 
 /** String with date pattern (generic — caller provides format description) */
 export const datePattern = (desc: string) =>
-    ({ type: 'string' as const, description: desc, pattern: '^\\\\d{2}[./]\\\\d{2}[./]\\\\d{4}$' });
+    ({ type: 'string' as const, description: desc, pattern: '^\\d{2}[./]\\d{2}[./]\\d{4}$' });
 
 // ─── Structure Builders ─────────────────────────────────────────────────────
 

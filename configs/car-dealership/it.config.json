@@ -26,12 +26,12 @@
           "dataScadenza": {
             "type": "string",
             "description": "Data scadenza del bollo",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "dataPagamento": {
             "type": "string",
             "description": "Data del pagamento",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -161,7 +161,7 @@
           "dataVendita": {
             "type": "string",
             "description": "Data di stipula dell'atto",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "km": {
             "type": "number",
@@ -222,7 +222,7 @@
           "dataDecorrenza": {
             "type": "string",
             "description": "Data decorrenza garanzia",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -259,7 +259,7 @@
           "dataAcquisto": {
             "type": "string",
             "description": "Data dell'ultima formalità di acquisto",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "formalita": {
             "type": "string",
@@ -296,7 +296,7 @@
           "dataRevisione": {
             "type": "string",
             "description": "Data della revisione",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "esito": {
             "type": "string",
@@ -316,7 +316,7 @@
           "scadenzaProssimaRevisione": {
             "type": "string",
             "description": "Data scadenza prossima revisione",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "centroRevisione": {
             "type": "string",
@@ -475,12 +475,12 @@
           "dataEmissione": {
             "type": "string",
             "description": "Data di emissione in formato DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "dataScadenza": {
             "type": "string",
             "description": "Data di scadenza in formato DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "rilasciatoDa": {
             "type": "string",
@@ -493,7 +493,7 @@
           "dataNascita": {
             "type": "string",
             "description": "Data di nascita in formato DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "indirizzoDiResidenza": {
             "type": "string",
@@ -642,7 +642,7 @@
           "dataImmatricolazione": {
             "type": "string",
             "description": "Data di prima immatricolazione",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "massamassimaKg": {
             "type": "number",
@@ -708,12 +708,12 @@
           "decorrenza": {
             "type": "string",
             "description": "Data decorrenza copertura",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "scadenza": {
             "type": "string",
             "description": "Data scadenza copertura",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "massimale": {
             "type": "string",
@@ -777,7 +777,7 @@
           "dataStipula": {
             "type": "string",
             "description": "Data della procura",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -870,7 +870,7 @@
           "dataNascita": {
             "type": "string",
             "description": "Data di nascita",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "luogoNascita": {
             "type": "string",
@@ -879,7 +879,7 @@
           "dataScadenza": {
             "type": "string",
             "description": "Data di scadenza",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -942,7 +942,7 @@
           "dataIscrizione": {
             "type": "string",
             "description": "Data iscrizione alla Camera di Commercio",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "rea": {
             "type": "string",
@@ -1001,7 +1001,7 @@
           "dataVisura": {
             "type": "string",
             "description": "Data della visura",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -3117,6 +3117,6 @@
       ]
     }
   ],
-  "createdAt": "2026-02-14T19:59:26.966Z",
-  "updatedAt": "2026-02-14T19:59:26.966Z"
+  "createdAt": "2026-02-14T21:02:33.714Z",
+  "updatedAt": "2026-02-14T21:02:33.714Z"
 }

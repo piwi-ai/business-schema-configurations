@@ -79,7 +79,7 @@
           "dataEmissione": {
             "type": "string",
             "description": "Data emissione attestato",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -117,7 +117,7 @@
               "dataNascita": {
                 "type": "string",
                 "description": "Data di nascita",
-                "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+                "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
               },
               "luogoNascita": {
                 "type": "string",
@@ -133,7 +133,7 @@
           "dataDecesso": {
             "type": "string",
             "description": "Data del decesso",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "luogoDecesso": {
             "type": "string",
@@ -150,7 +150,7 @@
           "dataRilascio": {
             "type": "string",
             "description": "Data di rilascio",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -186,7 +186,7 @@
               "dataNascita": {
                 "type": "string",
                 "description": "Data di nascita",
-                "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+                "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
               }
             },
             "required": [
@@ -206,7 +206,7 @@
           "dataVisita": {
             "type": "string",
             "description": "Data della visita/referto",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "diagnosi": {
             "type": "string",
@@ -297,7 +297,7 @@
                 "dataNascita": {
                   "type": "string",
                   "description": "Data di nascita",
-                  "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+                  "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
                 }
               },
               "required": [
@@ -310,7 +310,7 @@
           "dataRilascio": {
             "type": "string",
             "description": "Data di rilascio del certificato",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "comune": {
             "type": "string",
@@ -337,7 +337,7 @@
           "dataSinistro": {
             "type": "string",
             "description": "Data del sinistro",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "oraSinistro": {
             "type": "string",
@@ -500,12 +500,12 @@
           "dataEmissione": {
             "type": "string",
             "description": "Data di emissione in formato DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "dataScadenza": {
             "type": "string",
             "description": "Data di scadenza in formato DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "rilasciatoDa": {
             "type": "string",
@@ -518,7 +518,7 @@
           "dataNascita": {
             "type": "string",
             "description": "Data di nascita in formato DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "indirizzoDiResidenza": {
             "type": "string",
@@ -560,7 +560,7 @@
           "data": {
             "type": "string",
             "description": "Data fattura",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "targa": {
             "type": "string",
@@ -631,7 +631,7 @@
           "dataEffettoDisdetta": {
             "type": "string",
             "description": "Data effetto della disdetta",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "motivo": {
             "type": "string",
@@ -640,7 +640,7 @@
           "dataLettera": {
             "type": "string",
             "description": "Data della lettera",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -698,7 +698,7 @@
           "dataImmatricolazione": {
             "type": "string",
             "description": "Data di prima immatricolazione",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "intestatario": {
             "type": "string",
@@ -746,7 +746,7 @@
           "dataPerizia": {
             "type": "string",
             "description": "Data della perizia",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "danni": {
             "type": "string",
@@ -892,12 +892,12 @@
           "decorrenza": {
             "type": "string",
             "description": "Data decorrenza copertura",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "scadenza": {
             "type": "string",
             "description": "Data scadenza copertura",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "massimale": {
             "type": "string",
@@ -953,7 +953,7 @@
           "dataPagamento": {
             "type": "string",
             "description": "Data del pagamento",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "periodoRiferimento": {
             "type": "string",
@@ -1108,7 +1108,7 @@
           "dataNascita": {
             "type": "string",
             "description": "Data di nascita",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "luogoNascita": {
             "type": "string",
@@ -1117,7 +1117,7 @@
           "dataScadenza": {
             "type": "string",
             "description": "Data di scadenza",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -1143,7 +1143,7 @@
           "dataVerbale": {
             "type": "string",
             "description": "Data del verbale",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "luogo": {
             "type": "string",
@@ -2778,6 +2778,6 @@
       ]
     }
   ],
-  "createdAt": "2026-02-14T19:59:26.972Z",
-  "updatedAt": "2026-02-14T19:59:26.972Z"
+  "createdAt": "2026-02-14T21:02:33.719Z",
+  "updatedAt": "2026-02-14T21:02:33.719Z"
 }

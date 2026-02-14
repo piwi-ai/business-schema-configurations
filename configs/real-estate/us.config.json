@@ -18,7 +18,7 @@
           "appraisalDate": {
             "type": "string",
             "description": "Date of appraisal",
-            "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+            "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
           },
           "propertyAddress": {
             "type": "string",
@@ -79,7 +79,7 @@
                 "saleDate": {
                   "type": "string",
                   "description": "Sale date",
-                  "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+                  "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
                 },
                 "squareFootage": {
                   "type": "number",
@@ -115,7 +115,7 @@
           "closingDate": {
             "type": "string",
             "description": "Closing date",
-            "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+            "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
           },
           "propertyAddress": {
             "type": "string",
@@ -318,7 +318,7 @@
           "recordingDate": {
             "type": "string",
             "description": "Date deed was recorded",
-            "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+            "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
           },
           "county": {
             "type": "string",
@@ -361,7 +361,7 @@
           "dateOfBirth": {
             "type": "string",
             "description": "Date of birth",
-            "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+            "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
           },
           "idType": {
             "type": "string",
@@ -381,12 +381,12 @@
           "issueDate": {
             "type": "string",
             "description": "Issue date",
-            "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+            "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
           },
           "expirationDate": {
             "type": "string",
             "description": "Expiration date",
-            "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+            "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
           },
           "issuingState": {
             "type": "string",
@@ -481,7 +481,7 @@
           "inspectionDate": {
             "type": "string",
             "description": "Date of inspection",
-            "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+            "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
           },
           "propertyAddress": {
             "type": "string",
@@ -557,12 +557,12 @@
               "ssn": {
                 "type": "string",
                 "description": "Social Security Number — 9 digits, format XXX-XX-XXXX (extract with dashes)",
-                "pattern": "^\\\\d{3}-\\\\d{2}-\\\\d{4}$"
+                "pattern": "^\\d{3}-\\d{2}-\\d{4}$"
               },
               "dateOfBirth": {
                 "type": "string",
                 "description": "Date of birth",
-                "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+                "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
               },
               "currentAddress": {
                 "type": "string",
@@ -605,7 +605,7 @@
               "ssn": {
                 "type": "string",
                 "description": "Social Security Number — 9 digits, format XXX-XX-XXXX (extract with dashes)",
-                "pattern": "^\\\\d{3}-\\\\d{2}-\\\\d{4}$"
+                "pattern": "^\\d{3}-\\d{2}-\\d{4}$"
               },
               "monthlyIncome": {
                 "type": "number",
@@ -691,7 +691,7 @@
           "approvalDate": {
             "type": "string",
             "description": "Date of approval / commitment",
-            "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+            "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
           },
           "approvedAmount": {
             "type": "number",
@@ -725,7 +725,7 @@
           "expirationDate": {
             "type": "string",
             "description": "Commitment expiration date",
-            "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+            "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
           },
           "propertyAddress": {
             "type": "string",
@@ -755,7 +755,7 @@
           "surveyDate": {
             "type": "string",
             "description": "Date of survey",
-            "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+            "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
           },
           "propertyAddress": {
             "type": "string",
@@ -929,7 +929,7 @@
           "closingDate": {
             "type": "string",
             "description": "Expected closing date",
-            "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+            "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
           },
           "contingencies": {
             "type": "string",
@@ -963,7 +963,7 @@
           "executionDate": {
             "type": "string",
             "description": "Date contract was executed / signed",
-            "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+            "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
           }
         },
         "required": [
@@ -1016,7 +1016,7 @@
           "effectiveDate": {
             "type": "string",
             "description": "Effective date",
-            "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+            "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
           },
           "propertyAddress": {
             "type": "string",
@@ -1050,7 +1050,7 @@
           "effectiveDate": {
             "type": "string",
             "description": "Effective date of the title search",
-            "pattern": "^\\\\d{2}/\\\\d{2}/\\\\d{4}$"
+            "pattern": "^\\d{2}/\\d{2}/\\d{4}$"
           },
           "currentOwner": {
             "type": "string",
@@ -2924,6 +2924,6 @@
       ]
     }
   ],
-  "createdAt": "2026-02-14T19:59:26.985Z",
-  "updatedAt": "2026-02-14T19:59:26.985Z"
+  "createdAt": "2026-02-14T21:02:33.732Z",
+  "updatedAt": "2026-02-14T21:02:33.732Z"
 }

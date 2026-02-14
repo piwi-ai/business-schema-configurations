@@ -44,9 +44,8 @@
         "README.md"
     ],
     "scripts": {
-        "build": "tsc",
+        "build": "tsc && tsx src/generate-all.ts",
         "generate": "tsx src/generate-all.ts",
-        "build:all": "tsc && tsx src/generate-all.ts",
         "test": "vitest run",
         "test:watch": "vitest"
     },

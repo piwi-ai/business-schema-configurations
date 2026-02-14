@@ -69,12 +69,12 @@
           "dataRilascio": {
             "type": "string",
             "description": "Data di rilascio attestazione",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "validita": {
             "type": "string",
             "description": "Data di scadenza validità",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -282,7 +282,7 @@
               "dataNascita": {
                 "type": "string",
                 "description": "Data di nascita",
-                "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+                "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
               },
               "comuneNascita": {
                 "type": "string",
@@ -375,7 +375,7 @@
               "dataNascita": {
                 "type": "string",
                 "description": "Data di nascita",
-                "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+                "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
               }
             },
             "required": [
@@ -412,12 +412,12 @@
           "dataAssunzione": {
             "type": "string",
             "description": "Data di assunzione",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "dataScadenza": {
             "type": "string",
             "description": "Data scadenza (per contratti a termine)",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "ral": {
             "type": "number",
@@ -469,12 +469,12 @@
           "dataEmissione": {
             "type": "string",
             "description": "Data di emissione in formato DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "dataScadenza": {
             "type": "string",
             "description": "Data di scadenza in formato DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "rilasciatoDa": {
             "type": "string",
@@ -487,7 +487,7 @@
           "dataNascita": {
             "type": "string",
             "description": "Data di nascita in formato DD.MM.YYYY",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "indirizzoDiResidenza": {
             "type": "string",
@@ -577,7 +577,7 @@
           "data": {
             "type": "string",
             "description": "Data di emissione fattura",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "emittente": {
             "type": "object",
@@ -680,7 +680,7 @@
           "scadenzaPagamento": {
             "type": "string",
             "description": "Data scadenza pagamento",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           }
         },
         "required": [
@@ -789,7 +789,7 @@
               "dataNascita": {
                 "type": "string",
                 "description": "Data di nascita",
-                "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+                "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
               }
             },
             "required": [
@@ -904,7 +904,7 @@
           "dataVersamento": {
             "type": "string",
             "description": "Data del versamento",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "tributi": {
             "type": "array",
@@ -1043,7 +1043,7 @@
           "data": {
             "type": "string",
             "description": "Data della ricevuta/scontrino",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "esercente": {
             "type": "string",
@@ -1155,7 +1155,7 @@
           "dataIscrizione": {
             "type": "string",
             "description": "Data iscrizione alla Camera di Commercio",
-            "pattern": "^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$"
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
           },
           "rea": {
             "type": "string",
@@ -2750,6 +2750,6 @@
       ]
     }
   ],
-  "createdAt": "2026-02-14T19:59:26.960Z",
-  "updatedAt": "2026-02-14T19:59:26.961Z"
+  "createdAt": "2026-02-14T21:02:33.707Z",
+  "updatedAt": "2026-02-14T21:02:33.709Z"
 }

@@ -58,11 +58,17 @@ describe('schema helpers', () => {
 // ─── Italian Helpers ────────────────────────────────────────────────────────
 
 describe('Italian helpers', () => {
-    it('date() returns DD.MM.YYYY pattern', () => {
+    it('date() pattern matches DD.MM.YYYY strings', () => {
         const f = date();
         expect(f.type).toBe('string');
-        expect(f.pattern).toContain('\\d{2}');
         expect(f.description).toContain('DD.MM.YYYY');
+        // Pattern must be a valid regex that matches real dates
+        const re = new RegExp(f.pattern!);
+        expect(re.test('15.01.2021')).toBe(true);
+        expect(re.test('01.12.1999')).toBe(true);
+        // Must reject non-dates
+        expect(re.test('15/01/2021')).toBe(false);
+        expect(re.test('abc')).toBe(false);
     });
 
     it('nome() and cognome() return string with Italian description', () => {
@@ -72,11 +78,13 @@ describe('Italian helpers', () => {
         expect(cognome().description).toContain('Cognome');
     });
 
-    it('codiceFiscale() has 16-char alphanumeric pattern', () => {
+    it('codiceFiscale() pattern matches valid Codice Fiscale', () => {
         const f = codiceFiscale();
         expect(f.type).toBe('string');
-        expect(f.pattern).toBeDefined();
-        expect(f.pattern).toContain('[A-Z]');
+        const re = new RegExp(f.pattern!);
+        expect(re.test('RSSMRA80A01H501U')).toBe(true);
+        expect(re.test('rssmra80a01h501u')).toBe(false); // lowercase
+        expect(re.test('INVALID')).toBe(false);
     });
 
     it('partitaIva() returns string', () => {
@@ -101,10 +109,15 @@ describe('Italian helpers', () => {
 // ─── US Helpers ─────────────────────────────────────────────────────────────
 
 describe('US helpers', () => {
-    it('dateUS() returns MM/DD/YYYY pattern', () => {
+    it('dateUS() pattern matches MM/DD/YYYY strings', () => {
         const f = dateUS();
         expect(f.type).toBe('string');
         expect(f.description).toContain('MM/DD/YYYY');
+        const re = new RegExp(f.pattern!);
+        expect(re.test('01/15/2021')).toBe(true);
+        expect(re.test('12/31/1999')).toBe(true);
+        expect(re.test('15.01.2021')).toBe(false);
+        expect(re.test('abc')).toBe(false);
     });
 
     it('firstName() and lastName() return strings', () => {
@@ -112,11 +125,15 @@ describe('US helpers', () => {
         expect(lastName().type).toBe('string');
     });
 
-    it('ssn() has XXX-XX-XXXX pattern', () => {
+    it('ssn() pattern matches XXX-XX-XXXX strings', () => {
         const f = ssn();
         expect(f.type).toBe('string');
-        expect(f.pattern).toBeDefined();
         expect(f.description).toContain('Social Security');
+        const re = new RegExp(f.pattern!);
+        expect(re.test('123-45-6789')).toBe(true);
+        expect(re.test('000-00-0000')).toBe(true);
+        expect(re.test('12345-6789')).toBe(false);
+        expect(re.test('abc')).toBe(false);
     });
 
     it('ein() returns string', () => {

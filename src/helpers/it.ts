@@ -16,7 +16,7 @@ const enumField = _enumField;
 
 /** Date field (European DD.MM.YYYY — dots only, never slashes) */
 export const date = (desc = 'Data in formato DD.MM.YYYY — ALWAYS use dots as separator (es. 15.01.2021), NEVER use slashes (15/01/2021 is WRONG)') =>
-    ({ type: 'string' as const, description: desc, pattern: '^\\\\d{2}\\\\.\\\\d{2}\\\\.\\\\d{4}$' });
+    ({ type: 'string' as const, description: desc, pattern: '^\\d{2}\\.\\d{2}\\.\\d{4}$' });
 
 // ─── Italian Person Fields ──────────────────────────────────────────────────
 
