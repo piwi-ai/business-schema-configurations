@@ -14,6 +14,7 @@ import {
     Copy,
     Check,
 } from 'lucide-react';
+import CountryFlag from '../components/CountryFlag';
 import './Documents.css';
 import './Explorer.css';
 
@@ -176,7 +177,7 @@ export default function Documents() {
                                     setSearch('');
                                 }}
                             >
-                                <span className="documents__country-flag">{c.flag}</span>
+                                <span className="documents__country-flag"><CountryFlag code={c.code} size={20} /></span>
                                 <span className="documents__country-name">{c.name}</span>
                                 <span className="documents__country-count">{c.docCount}</span>
                             </button>
@@ -188,7 +189,7 @@ export default function Documents() {
                 <main className="documents__main">
                     <div className="documents__header">
                         <h1 className="explorer__title">
-                            {activeCountry?.flag} {activeCountry?.name} — Documents
+                            {activeCountry && <CountryFlag code={activeCountry.code} size={24} />}{' '}{activeCountry?.name} — Documents
                         </h1>
                         <p className="explorer__subtitle">
                             {docs.length} document type{docs.length !== 1 ? 's' : ''} with JSON

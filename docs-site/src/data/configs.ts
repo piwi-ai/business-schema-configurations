@@ -75,6 +75,7 @@ export interface VerticalMeta {
     config: BusinessConfig;
     slug: string;
     flag: string;
+    countryCode: string;
     country: string;
     vertical: string;
 }
@@ -84,6 +85,7 @@ export const verticals: VerticalMeta[] = [
         config: accountantIt as unknown as BusinessConfig,
         slug: 'accountant-it',
         flag: '🇮🇹',
+        countryCode: 'it',
         country: 'Italy',
         vertical: 'Accountant',
     },
@@ -91,6 +93,7 @@ export const verticals: VerticalMeta[] = [
         config: carDealershipIt as unknown as BusinessConfig,
         slug: 'car-dealership-it',
         flag: '🇮🇹',
+        countryCode: 'it',
         country: 'Italy',
         vertical: 'Car Dealership',
     },
@@ -98,6 +101,7 @@ export const verticals: VerticalMeta[] = [
         config: insuranceIt as unknown as BusinessConfig,
         slug: 'insurance-it',
         flag: '🇮🇹',
+        countryCode: 'it',
         country: 'Italy',
         vertical: 'Insurance',
     },
@@ -105,6 +109,7 @@ export const verticals: VerticalMeta[] = [
         config: realEstateIt as unknown as BusinessConfig,
         slug: 'real-estate-it',
         flag: '🇮🇹',
+        countryCode: 'it',
         country: 'Italy',
         vertical: 'Real Estate',
     },
@@ -112,6 +117,7 @@ export const verticals: VerticalMeta[] = [
         config: realEstateUs as unknown as BusinessConfig,
         slug: 'real-estate-us',
         flag: '🇺🇸',
+        countryCode: 'us',
         country: 'USA',
         vertical: 'Real Estate',
     },

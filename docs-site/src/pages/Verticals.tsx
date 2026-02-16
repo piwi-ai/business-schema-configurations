@@ -14,11 +14,13 @@ import {
     Check,
 } from 'lucide-react';
 import './Verticals.css';
+import './Entities.css';
+import CountryFlag from '../components/CountryFlag';
 
 /* ── Grouped verticals ────────────────────────────────────── */
 interface VerticalGroup {
     vertical: string;
-    entries: { idx: number; flag: string; country: string }[];
+    entries: { idx: number; flag: string; country: string; countryCode: string }[];
 }
 
 const groups: VerticalGroup[] = useMemoGroups();
@@ -29,7 +31,7 @@ function useMemoGroups(): VerticalGroup[] {
         if (!map.has(v.vertical)) {
             map.set(v.vertical, { vertical: v.vertical, entries: [] });
         }
-        map.get(v.vertical)!.entries.push({ idx, flag: v.flag, country: v.country });
+        map.get(v.vertical)!.entries.push({ idx, flag: v.flag, country: v.country, countryCode: v.countryCode });
     });
     return Array.from(map.values());
 }
@@ -330,7 +332,7 @@ export default function Verticals() {
                                             onClick={() => setActiveIdx(e.idx)}
                                         >
                                             <span className="verticals__country-flag">
-                                                {e.flag}
+                                                <CountryFlag code={e.countryCode} size={18} />
                                             </span>
                                             <span>{e.country}</span>
                                         </button>
@@ -344,7 +346,7 @@ export default function Verticals() {
                 <main className="verticals__main">
                     <div className="verticals__header">
                         <h1 className="explorer__title">
-                            {active.flag} {active.config.name}
+                            <CountryFlag code={active.countryCode} size={24} />{' '}{active.config.name}
                         </h1>
                         <p className="explorer__subtitle">{active.config.description}</p>
                         <div className="verticals__meta">
