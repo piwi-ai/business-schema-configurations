@@ -79,6 +79,7 @@ export * as hrDocs from './countries/hr/documentTypes/index.js';
 export * as huDocs from './countries/hu/documentTypes/index.js';
 export * as ieDocs from './countries/ie/documentTypes/index.js';
 export * as isDocs from './countries/is/documentTypes/index.js';
+export * as itDocs from './countries/it/documentTypes/index.js';
 export * as liDocs from './countries/li/documentTypes/index.js';
 export * as ltDocs from './countries/lt/documentTypes/index.js';
 export * as luDocs from './countries/lu/documentTypes/index.js';
