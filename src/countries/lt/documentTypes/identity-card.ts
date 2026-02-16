@@ -1,18 +1,18 @@
 /**
- * Identity Document (Hungary)
+ * Identity Document (Lithuania)
  */
 import type { DocumentTypeDef } from '../../../types.js';
 import {
-    text, date, objectSchema,
+    text, date, arrayOfObjects,
     firstName, lastName, personalId
-} from '../../../helpers/hu.js';
+} from '../../../helpers/lt.js';
 
-export const identita: DocumentTypeDef = {
-    id: 'doc-identita',
+export const identityCard: DocumentTypeDef = {
+    id: 'doc-identity-card',
     name: 'Identity Document',
     description: 'Identity document (ID Card, Passport, Driver License)',
-    isArrayExtraction: true,
-    jsonSchema: objectSchema({
+    jsonSchema: arrayOfObjects({
+        // English Keys
         firstName: firstName(),
         lastName: lastName(),
         personalId: personalId(),
@@ -24,5 +24,10 @@ export const identita: DocumentTypeDef = {
         placeOfBirth: text('Place of birth'),
         dateOfBirth: date('Date of birth'),
         address: text('Residential address'),
+
+        // Original Language Mapping (Aliases)
+        vardas: firstName('Vardas'),
+        pavarde: lastName('Pavardė'),
+        asmens: personalId('Asmens kodas'),
     }, ['firstName', 'lastName', 'personalId', 'documentType', 'documentNumber', 'issueDate', 'expirationDate']),
 };

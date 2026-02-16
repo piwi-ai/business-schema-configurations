@@ -1,4 +1,4 @@
 /**
  * Spain — Document Type Definitions
  */
-export { identita } from './identita.js';
+export { identityCard } from './identity-card.js';

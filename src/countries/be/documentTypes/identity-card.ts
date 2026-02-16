@@ -1,18 +1,18 @@
 /**
- * Identity Document (Slovenia)
+ * Identity Document (Belgium)
  */
 import type { DocumentTypeDef } from '../../../types.js';
 import {
-    text, date, objectSchema,
+    text, date, arrayOfObjects,
     firstName, lastName, personalId
-} from '../../../helpers/si.js';
+} from '../../../helpers/be.js';
 
-export const identita: DocumentTypeDef = {
-    id: 'doc-identita',
+export const identityCard: DocumentTypeDef = {
+    id: 'doc-identity-card',
     name: 'Identity Document',
     description: 'Identity document (ID Card, Passport, Driver License)',
-    isArrayExtraction: true,
-    jsonSchema: objectSchema({
+    jsonSchema: arrayOfObjects({
+        // English Keys
         firstName: firstName(),
         lastName: lastName(),
         personalId: personalId(),
@@ -24,5 +24,10 @@ export const identita: DocumentTypeDef = {
         placeOfBirth: text('Place of birth'),
         dateOfBirth: date('Date of birth'),
         address: text('Residential address'),
+
+        // Original Language Mapping (Aliases)
+        prenom: firstName('Prénom'),
+        nom: lastName('Nom'),
+        numero: personalId('Numéro de registre national'),
     }, ['firstName', 'lastName', 'personalId', 'documentType', 'documentNumber', 'issueDate', 'expirationDate']),
 };
