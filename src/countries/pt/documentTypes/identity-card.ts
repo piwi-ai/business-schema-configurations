@@ -3,7 +3,7 @@
  */
 import type { DocumentTypeDef } from '../../../types.js';
 import {
-    text, date, arrayOfObjects,
+    text, date, objectSchema,
     firstName, lastName, personalId
 } from '../../../helpers/pt.js';
 
@@ -11,11 +11,10 @@ export const identityCard: DocumentTypeDef = {
     id: 'doc-identity-card',
     name: 'Identity Document',
     description: 'Identity document (ID Card, Passport, Driver License)',
-    jsonSchema: arrayOfObjects({
-        // English Keys
-        firstName: firstName(),
-        lastName: lastName(),
-        personalId: personalId(),
+    jsonSchema: objectSchema({
+        firstName: firstName('First name / Nome'),
+        lastName: lastName('Last name / Apelido'),
+        personalId: personalId('Personal ID number / NIF'),
         documentType: text('Document type (Passport, ID Card, Driver License)'),
         documentNumber: text('Document number'),
         issueDate: date('Issue date'),
@@ -24,10 +23,5 @@ export const identityCard: DocumentTypeDef = {
         placeOfBirth: text('Place of birth'),
         dateOfBirth: date('Date of birth'),
         address: text('Residential address'),
-
-        // Original Language Mapping (Aliases)
-        nome: firstName('Nome'),
-        apelido: lastName('Apelido'),
-        nif: personalId('NIF'),
     }, ['firstName', 'lastName', 'personalId', 'documentType', 'documentNumber', 'issueDate', 'expirationDate']),
 };
